@@ -32,6 +32,7 @@ public class SumEquals_toNumber {
 	{
 		System.out.println("\nEnter the number to check: ");
 		int num=sc.nextInt();		//for getting the number from user.  for eg: 10
+		System.out.println();
 		boolean check=false;
 		for(int i=0;i<arr.length;i++)
 		{
@@ -40,7 +41,7 @@ public class SumEquals_toNumber {
 				if(arr[i]+arr[j]==num)		// for eg: 1+9=10 
 				{
 					check=true;
-					System.out.println("The sum of index "+i+" = "+arr[i]+ " and index "+ j+" = " + arr[j]+" is equal to given number "+num);
+					System.out.println("The sum of index "+ i +" and "+ j +" values are "+arr[i]+ " + " + arr[j]+" is equal to given number "+num);
 				}
 			}
 		}

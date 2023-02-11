@@ -54,30 +54,6 @@ public class Non_RepeatedArrays {
 			}
 			if(check==false)
 				System.out.println("Array is full of repeated elements.");
-			
-//			boolean check=false;
-//			int flag=0;
-//			for(int i=0;i<arr.length;i++)
-//			{
-//				int count=0;
-//				for(int j=i+1;j<arr.length;j++)
-//				{	
-//					if(arr[i]!=arr[j])
-//					{
-//						count++;
-//						flag=1;
-//					}
-//				}
-//				if(count==arr.length-1-i)
-//				{
-//					check=true;
-//					System.out.println("The first non-repeated element is "+arr[i]);
-//					break;
-//				}
-//				}
-//			
-//			if(flag==0)
-//				System.out.println("Array is full of repeated elements.");
 		}
 		
 		//for finding all the non-repeated elements in an array

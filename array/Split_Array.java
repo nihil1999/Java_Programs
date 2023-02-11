@@ -13,21 +13,23 @@ public class Split_Array {
 
 	/**
 	 * @param args
-	 * for assigning values to an array from the user.
+	 * 
 	 */
 	
 	public int[] to_AssignValues(Scanner sc)
 	{
 		System.out.println("Enter the range");
 		int arr[]=new int[sc.nextInt()];
-		
+
+//for assigning values to an array from the user.
 		for(int i=0;i<arr.length;i++)
 		{
 			System.out.println("Enter the value for "+i+" index: ");
 			arr[i]=sc.nextInt();
 		}
 		
-		System.out.println("Array values");
+//for displaying the array	
+		System.out.println("\nArray values");
 		for(int i=0;i<arr.length;i++)
 		{
 			System.out.print(arr[i]+" ");
@@ -44,9 +46,9 @@ public class Split_Array {
 		for(int i=0;i<arr.length;i++)
 		{
 			if(arr[i]%2==0)
-				evencount++;		//even array length
+				evencount++;		//for even array length
 			else
-				oddcount++;		////odd array length
+				oddcount++;		////for odd array length
 		}
 		
 		int evenarray[]=new int[evencount];		//to store an even numbers

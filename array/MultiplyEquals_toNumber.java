@@ -34,6 +34,8 @@ public class MultiplyEquals_toNumber {
 		System.out.println("\nEnter the number to check: ");
 		int num=sc.nextInt();		//for getting the number from user.  for eg: 10
 		boolean check=false;
+		System.out.println();
+		
 		for(int i=0;i<arr.length;i++)
 		{
 			for(int j=i+1;j<arr.length;j++)
@@ -41,7 +43,7 @@ public class MultiplyEquals_toNumber {
 				if(arr[i]*arr[j]==num)		// for eg: 1*10=10 
 				{
 					check=true;
-					System.out.println("The multiply of index "+i+" = "+arr[i]+ " and index "+ j+" = " + arr[j]+" is equal to given number "+num);
+					System.out.println("The multiply of index "+ i +" and " + j +" values are "+arr[i]+ " x " + arr[j]+" is equal to given number "+num);
 				}
 			}
 		}
@@ -52,7 +54,7 @@ public class MultiplyEquals_toNumber {
 //for displaying the array
 	public void display(int a[])
 	{
-		System.out.println("\nDisplaying the array values: ");
+		System.out.println("\nDisplaying the array values: \n");
 		for(int i=0;i<a.length;i++)
 		{
 			System.out.print(a[i]+ " ");

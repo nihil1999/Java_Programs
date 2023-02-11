@@ -16,6 +16,8 @@ public class PrintEvenNumbers_inOddIndex {
 	 * for assigning values to an array from the user.
 	 */
 	
+	boolean flag=false;
+	
 	public int[] to_AssignValues(Scanner sc)
 	{
 		System.out.println("Enter the range");
@@ -33,19 +35,19 @@ public class PrintEvenNumbers_inOddIndex {
 	{
 		System.out.println();
 		int count=0;
-		boolean flag=false;
 		for(int i=0;i<arr.length;i++)
 		{
-			if(i%2!=0 && arr[i]%2==0)
+			if(i%2!=0 && arr[i]%2==0)  // odd index and even number i.e index should be odd and then the number should be even.
 			{
 				System.out.println(arr[i] +" is even element in "+i+ " index");
-				count++;
+				count++;		//to know how many numbers
 				flag=true;
 			}
 		}
 		if(flag==false)
 			System.out.println("There are no even numbers in an odd index of an array.");
-		
+
+//for storing in new array
 		int even[]=new int[count];
 		int index=0;
 		for(int i=0;i<arr.length;i++)
@@ -68,11 +70,13 @@ public class PrintEvenNumbers_inOddIndex {
 			System.out.print(a[i]+ " ");
 		}
 		
+		if(flag==true) {
 		System.out.println("\n\nDisplaying the even array values in odd index: \n");
 		for(int i=0;i<even.length;i++)
 		{
 			System.out.print(even[i]+ " ");
 		}	
+	}
 	}
 	
 	public static void main(String[] args) {

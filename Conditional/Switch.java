@@ -1,6 +1,5 @@
 package Conditional;
 
-import java.util.Scanner;
 
 public class Switch {
 	

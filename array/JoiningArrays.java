@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 /**
  * @author logan
- *for joining 2 arrays
+ *for joining 2 arrays into new array.
  */
 public class JoiningArrays {
 
@@ -56,7 +56,7 @@ public class JoiningArrays {
 				if(i<arr1.length)	//first i need to store the 1st array values so if the index value greater than 1st array length then it goes to else condition.			
 					b[i]=arr1[i];	// i.e 1 2 3 4 5 (i value upto 4).
 				
-				else				//when index value greater than or equal 5 it enters into else block  i=5 , arr1.length=5
+				else				//when index value greater than or equal to 5 it enters into else block  i=5 , arr1.length=5
 					b[i]=arr2[i-arr1.length];	// i.e 6 7 8 (arr2[i-arr1.length] => array2 starts with index 0 so arr2[5-5=0] arr2[6-5=1]....
 			}	
 	}
