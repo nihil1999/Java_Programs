@@ -56,7 +56,7 @@ public class Shifting_Array_Elements {
 			
 			else
 			{
-				if(i!=mid && i!=mid-1)
+				if(i!=mid && i!=mid-1)		//for even range. i.e index - 0 1 2 3 4 5  => middle number is 2 and 3. if index is not equal to this then enters into this block.
 				{
 					temp=arr1[i];
 					arr1[i]=arr1[mid+i+1];
