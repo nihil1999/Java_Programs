@@ -32,7 +32,7 @@ public class Divide_ElementInArray {
 //to divide all element in an array and store it in the same array.
 	public void to_divide(int[] arr,Scanner sc)
 	{
-		System.out.println("\nEnter the number to check: ");
+		System.out.println("\nEnter the number to divide: ");
 		int num=sc.nextInt();		//for getting the number from user.  for eg: 3
 		
 		for(int i=0;i<arr.length;i++)
