@@ -49,8 +49,7 @@ public class RepeatedArrays {
 				break;
 		}
 		if(flag==0)			//if no number repeats then the flag will be 0.
-			System.out.println("No repeated elements in an array.");
-		
+			System.out.println("No repeated elements in an array.");	
 	}
 	
 //for finding all the repeated elements in an array

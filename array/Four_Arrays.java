@@ -31,7 +31,7 @@ public class Four_Arrays {
 		
 		display(a,b,c,d);
 		add_arrays(a,b,c,d);
-		display(a,b,c,d);
+	//	display(a,b,c,d);
 	}
 
 	public void add_arrays(int[] a, int[] b, int[] c, int[] d) {
