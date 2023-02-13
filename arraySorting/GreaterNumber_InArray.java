@@ -2,6 +2,8 @@ package arraySorting;
 
 import java.util.Scanner;
 
+//to print the maximum number in an array.
+
 public class GreaterNumber_InArray {
 	
 	public int check_greater_number()
@@ -22,10 +24,10 @@ public class GreaterNumber_InArray {
 			System.out.print(arr[i]+" ");
 		}
 		
-		int max=arr[0];
+		int max=arr[0];			//i haven taken first index element is maximum.
 		for(int i=0;i<arr.length;i++)
 		{
-			if(max<arr[i])
+			if(max<arr[i])		//if a number is greater than the first index then that number is maximum number.
 			{
 				max=arr[i];
 			}

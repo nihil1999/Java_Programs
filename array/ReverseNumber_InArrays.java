@@ -4,18 +4,24 @@ import java.util.Scanner;
 
 public class ReverseNumber_InArrays {
 	
-	public void reverse(int[] range)
+	public void reverse(int[] arr)
 	{
 		Scanner s=new Scanner(System.in);
-		for(int i=0;i<range.length;i++)
+		for(int i=0;i<arr.length;i++)
 		{
 			System.out.println("Enter the " + i+" number: ");
-			range[i]=s.nextInt();
+			arr[i]=s.nextInt();
 		}
-		//s.close();
-		for(int i=range.length-1;i>=0;i--)
+		
+		for(int i=0;i<arr.length;i++)
 		{
-			System.out.print(range[i] + " ");
+			System.out.print(arr[i] + " ");
+		}
+		
+		System.out.println("\nArray in reverse order.\n");
+		for(int i=arr.length-1;i>=0;i--)
+		{
+			System.out.print(arr[i] + " ");
 		}
 	}
 

@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 /**
  * @author logan
- *
+ *to print the minimum number in an array.
  */
 public class LowestNumber_inArray {
 
@@ -27,16 +27,17 @@ public class LowestNumber_inArray {
 			System.out.println("Enter the value for " +i+" index");
 			arr[i]=sc.nextInt();
 		}
+		
 		System.out.println();
 		for(int i=0;i<arr.length;i++)
 		{
 			System.out.print(arr[i]+" ");
 		}
 		
-		int min=arr[0];
+		int min=arr[0];				//i haven taken first index element is minimum.
 		for(int i=0;i<arr.length;i++)
 		{
-			if(min>arr[i])
+			if(min>arr[i])		//if a number is lower than the first index then that number is lowest number.
 			{
 				min=arr[i];
 			}
