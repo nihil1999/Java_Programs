@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 /**
  * @author logan
- *
+ *to count the given element in the array
  */
 public class CountOf_givenElement_inArray {
 
@@ -26,7 +26,7 @@ public class CountOf_givenElement_inArray {
 
 				for (int i = 0; i < arr1.length; i++) {
 					System.out.println("Enter the value for " + i + " index: ");
-					arr1[i] = sc.nextInt(); // 1 2 3 4 5
+					arr1[i] = sc.nextInt(); 
 				}
 	}
 	

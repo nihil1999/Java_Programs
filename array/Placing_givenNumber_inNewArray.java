@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 /**
  * @author logan
- *
+ *placing the given number in last index of a new array.
  */
 public class Placing_givenNumber_inNewArray {
 
@@ -27,7 +27,7 @@ public class Placing_givenNumber_inNewArray {
 
 				for (int i = 0; i < arr1.length; i++) {
 					System.out.println("Enter the value for " + i + " index: ");
-					arr1[i] = sc.nextInt(); // 1 2 3 4 5
+					arr1[i] = sc.nextInt(); 
 				}
 	}
 	

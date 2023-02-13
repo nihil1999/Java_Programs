@@ -27,7 +27,7 @@ public class RemovingNumber_inArray {
 
 				for (int i = 0; i < arr1.length; i++) {
 					System.out.println("Enter the value for " + i + " index: ");
-					arr1[i] = sc.nextInt(); // 1 2 3 4 5
+					arr1[i] = sc.nextInt(); 
 				}
 				
 //for display user given array
