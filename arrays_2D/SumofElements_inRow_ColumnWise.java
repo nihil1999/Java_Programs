@@ -7,13 +7,13 @@ import java.util.Scanner;
 
 /**
  * @author logan
- *
+ *to sum the elements in row and column wise.
  */
 public class SumofElements_inRow_ColumnWise {
 
 	/**
 	 * @param args
-	 * to sum all elements in row and column wise.
+	 * 
 	 */
 	
 	Scanner sc = new Scanner(System.in);
@@ -54,9 +54,9 @@ public class SumofElements_inRow_ColumnWise {
 		
 //sum of all elements in column wise.
 		System.out.println("\n");
-				for (int i = 0; i < arr1.length; i++) {
+				for (int i = 0; i < arr1[0].length; i++) {		//changing row into column so applying column length.
 					int sum=0;
-					for(int j=0;j<arr1[i].length;j++) {			//arr1[i].length -> length of that row.
+					for(int j=0;j<arr1.length;j++) {			//applying row length.
 						sum+=arr1[j][i];
 					}
 					System.out.println("\nSum of all elements in an array of "+i+" column is "+sum);

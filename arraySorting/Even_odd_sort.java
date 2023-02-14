@@ -65,12 +65,12 @@ public class Even_odd_sort {
 //			System.out.print(arr2[i] + " ");
 //		}
 
-//for arranging even numbers and odd numbers in ascending order by separately.
+//for arranging even numbers and odd numbers in ascending order by separately. 
 		int min;
 		
 		for (int i = 0; i < arr2.length; i++) {		//takes first number and checks with next numbers
 			for(int j=i+1;j<arr2.length;j++) {
-				if(arr2[i]%2==0 && arr2[j]%2==0)		//if numbers is even then it enters into this block,  
+				if(arr2[i]%2==0 && arr2[j]%2==0)		//if numbers is even then it enters into this block,first even numbers enter into this block becauz i have separated even and odd numbers.  
 				{									//arr2[j]%2==0 becauz j is i+1 so the last even number checks with first odd number and i don't want that to happen.								 
 					if(arr2[i]>arr2[j])			// if the first number is greater than the next number then it will shift their places
 					{

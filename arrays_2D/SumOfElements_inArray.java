@@ -49,6 +49,16 @@ public class SumOfElements_inArray {
 			}
 		}
 		System.out.println("\nSum of all elements in an array is "+sum);
+
+//another method
+		int total=0;
+		for (int i = 0; i < arr1.length; i++) {
+			for(int j=0;j<arr1[i].length;j++) {			//arr1[i].length -> length of that row.
+				total+=arr1[i][j]+arr1[i][j];
+				System.out.print(total+" ");
+			}
+		}
+		System.out.println("\nSum of all elements in an array is "+total/2);
 	}
 	
 	public static void main(String[] args) {

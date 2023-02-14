@@ -8,6 +8,11 @@ import java.util.Scanner;
 /**
  * @author logan
  *Transpose of a given matrix. 
+ * 1 2 
+ * 3 4
+ *  
+ * 1 3
+ * 2 4
  */
 public class Transpose_Matrix {
 
@@ -34,6 +39,7 @@ public class Transpose_Matrix {
 		
 		public void toTranspose() {
 		arr2 = new int[arr1[0].length][arr1.length];
+		
 //by using variable for index count of new array.		
 //		int index1=0;
 //		for (int i = 0; i < arr1.length; i++) {
@@ -48,8 +54,8 @@ public class Transpose_Matrix {
 		
 		for (int i = 0; i < arr1.length; i++) {
 			for(int j=0;j<arr1[i].length;j++) {
-				
-				arr2[j][i] = arr1[i][j];			//row element need to be shifted to columns.	
+													//row element need to be shifted to columns. so i m giving column(j) first so row value will be assigned to column.
+				arr2[j][i] = arr1[i][j];			// 00 10 20 30 ... = 00 01 02 03...
 			}
 		}		
 	}
