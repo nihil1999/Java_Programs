@@ -55,12 +55,15 @@ public class SumofElements_inRow_ColumnWise {
 //sum of all elements in column wise.
 		System.out.println("\n");
 				for (int i = 0; i < arr1[0].length; i++) {		//changing row into column so applying column length.
+					System.out.println("Length of array 1 "+arr1[i].length);
 					int sum=0;
 					for(int j=0;j<arr1.length;j++) {			//applying row length.
 						sum+=arr1[j][i];
 					}
 					System.out.println("\nSum of all elements in an array of "+i+" column is "+sum);
 				}
+				
+			
 	}
 	
 	public static void main(String[] args) {
