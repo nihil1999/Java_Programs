@@ -61,12 +61,12 @@ public class CountOf_DuplicateElements_inArray {
 		
 		System.out.println();
 		int flag=0,index=0;
-		int check=0;
 		
 		for(int i=0;i<arr1.length;i++)		//to holds one number and check with other numbers.
 		{
 			int tocount=0;
 			int count=0;
+			int check=0;
 			
 			while(tocount<fullcount)		//to check the repeated elements if the repeated number enters again then it needs to be skipped so i used variable check to identify.
 			{
@@ -97,7 +97,7 @@ public class CountOf_DuplicateElements_inArray {
 	
 	public void display()
 	{
-		System.out.println("\nArray after changing even numbers \n");
+		System.out.println("\nArray after storing repeated elements \n");
 		
 		for (int i = 0; i < arr2.length; i++) {
 			System.out.print(arr2[i] + " ");
