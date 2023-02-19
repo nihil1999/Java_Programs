@@ -3,6 +3,8 @@
  */
 package string;
 
+import java.util.Scanner;
+
 /**
  * @author logan
  *
@@ -33,6 +35,10 @@ public class Info {
 		
 		String n="hulk";
 		System.out.println(n.charAt(0));
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter name: ");
+		System.out.println(sc.nextLine().charAt(0));
 		
 	}
 	//@Override

@@ -13,7 +13,7 @@ class Test {
 
 	Test() {
 		System.out.println("Constructor in parent.");
-		this.add(); // we can call a method in constructor and static method also.
+		//this.add(); // we can call a method in constructor and static method also.
 	}
 
 	public Test(int i) {

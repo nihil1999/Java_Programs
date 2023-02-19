@@ -1,6 +1,6 @@
 package Sample;
 
-public class Test2 extends Test1 {
+public class Test2 extends Test {
 
 	static int a=50;
 	public int b;
@@ -40,28 +40,37 @@ public class Test2 extends Test1 {
 	{
 		System.out.println("Object id: " + arg);		//object reference id.
 	}
+	
+	public void add()
+	{
+		System.out.println("child");
+		
+	}
+	
 	public static void main(String arg[]) {
-		Test2 obj = new Test2(10, 20);
+		Test obj = new Test2(10, 20);
 		// Test obj=new Test2();
 		// System.out.println(a);
 		// Test obj=new Test();
 		//c=1.5f;
-		System.out.println("Object ID in main method: " + arg);		//object reference id for arg. arg is an object of java.lang.String
-		System.out.println(obj.i);
-		System.out.println(obj.b);
-		System.out.println(a);
-		System.out.println("Object ID: " + obj);		//object reference id.
+//		System.out.println("Object ID in main method: " + arg);		//object reference id for arg. arg is an object of java.lang.String
+//		System.out.println(obj.i);
+//		System.out.println(obj.b);
+//		System.out.println(a);
+//		System.out.println("Object ID: " + obj);		//object reference id.
 		
-		obj.ownplace();
-		obj.get_objectid(obj);  		//here i m passing an object as an argument.
-		obj.his_ownplace();
-		obj.savings_money();
+//		obj.ownplace();
+//	//	obj.get_objectid(obj);  		//here i m passing an object as an argument.
+		obj.add();
+//		obj.his_ownplace();
+//		obj.savings_money();
+		//add();
 
-		Test obj1 = new Test2(1, 2);
-		System.out.println(obj1.i);
-		System.out.println(obj1.b);
-		System.out.println(a);
-		System.out.println(c);
+//		Test obj1 = new Test2(1, 2);
+//		System.out.println(obj1.i);
+//		System.out.println(obj1.b);
+//		System.out.println(a);
+//		System.out.println(c);
 
 	}
 }

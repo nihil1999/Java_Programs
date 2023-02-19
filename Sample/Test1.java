@@ -13,7 +13,7 @@ public abstract class Test1 extends Test{
 
 	public abstract void his_ownplace();
 
-	public void savings_money() {
+	public  void savings_money() {
 		System.out.println("Money in the bank deposited by father.");
 	}
 
