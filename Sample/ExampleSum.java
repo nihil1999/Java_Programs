@@ -50,6 +50,8 @@ public class ExampleSum {
 //		 System.out.println(obj2);
 //		 obj2.prog(2);
 //		 obj2.display();
+		 
+		 
 	 }
 	}
 	 

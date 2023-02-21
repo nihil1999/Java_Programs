@@ -41,7 +41,7 @@ public class Test2 extends Test {
 		System.out.println("Object id: " + arg);		//object reference id.
 	}
 	
-	public void add()
+	 public void add()
 	{
 		System.out.println("child");
 		

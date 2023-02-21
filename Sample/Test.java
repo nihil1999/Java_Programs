@@ -21,7 +21,7 @@ class Test {
 		System.out.println("One argument constructor in parent.");
 	}
 
-	public void add() {
+	protected void add() {
 		// Test obj=new Test();
 		System.out.println("static method");
 	}

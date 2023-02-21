@@ -8,7 +8,7 @@ import java.util.Scanner;
 /**
  * @author logan
  *to find the least number of bottles to completely fill the items without mixing.  
- *10 15 20 => output: 9 bottles -> 5 litre bottle: 10 ->2 , 15 ->3 , 20 ->4 = 2+3+4=9 bottle size: 5 litre
+ *10 15 20 => output: 9 bottles -> 5 litre bottle: 10 ->2 , 15 ->3 , 20 ->4 = 2+3+4= 9 bottles, size: 5 litre
  */
 public class Find_howMany_Bottles {
 

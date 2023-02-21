@@ -93,7 +93,7 @@ public class LCM {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		LCM obj=new LCM();
-		obj.toGet_nextBell();	
+	//	obj.toGet_nextBell();	
 	}
 
 }
