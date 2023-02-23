@@ -82,6 +82,7 @@ public class Student extends Info{
 		
 		Info obj=new Info();
 		System.out.println(s1.equals(obj));
+		System.out.println(s1.hashCode());
 		
 		//System.out.println(s1.hashCode());
 	}

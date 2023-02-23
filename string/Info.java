@@ -76,6 +76,12 @@ public class Info {
 		Info object = new Info();
 
 		System.out.println(object);
+		
+		System.out.println("LOGAN".charAt(0));
+		String str3="abc"+123;
+		System.out.println(str3);
+		char C='2'+0;			//2-> unicode +0 => unicode
+		System.out.println(C);
 	}
 
 	public String toString()
