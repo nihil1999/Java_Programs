@@ -27,7 +27,7 @@ public class Numbers_printInStars {
 		int num2=num,temp=num;
 		int temp1=num,count=0;
 		
-		while(temp1>0)
+		while(temp1>0)				//to count the digits.
 		{
 			temp1/=10;
 			count++;

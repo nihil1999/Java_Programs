@@ -82,6 +82,15 @@ public class Info {
 		System.out.println(str3);
 		char C='2'+0;			//2-> unicode +0 => unicode
 		System.out.println(C);
+		
+		System.out.println(1+2+3+"4");
+		System.out.println("1"+2+3+4+5);
+		int sum=5;
+		System.out.println("hai"+(sum+1));
+		
+		String str5="payilagam";
+		System.out.println(str5.indexOf("a",0 ));
+		int no=5;	
 	}
 
 	public String toString()

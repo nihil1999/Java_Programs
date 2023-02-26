@@ -76,19 +76,26 @@ public class ForLoop {
 		obj.to_notPrint();
 		obj.display_odd();
 		
-		System.out.println("\nworkspace");
-		int i=1;
-		for(;i<=5;)
+//		System.out.println("\nworkspace");
+//		int i=1;
+//		for(;i<=5;)
+//		{
+//			System.out.println(i);
+//			i++;
+//		}
+//		System.out.println();
+//		 i=1;
+//		for(;i<=5;)
+//		{
+//			System.out.println(i);
+//			i++;
+//		}
+		
+		for(int j=0;true;j++)
 		{
-			System.out.println(i);
-			i++;
-		}
-		System.out.println();
-		 i=1;
-		for(;i<=5;)
-		{
-			System.out.println(i);
-			i++;
+			System.out.println(j);
+			if(j==3)
+				break;
 		}
 		
 	}

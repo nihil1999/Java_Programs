@@ -108,6 +108,9 @@ public class Info {
 		System.out.println(Byte.MAX_VALUE);
 		System.out.println(Short.MAX_VALUE);
 		
+		int array[]=new int[0];
+		System.out.println(array.length);
+		
 		
 //		int[] num=new int[0];
 //		System.out.println(num[0]);

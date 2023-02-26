@@ -20,7 +20,7 @@ public class String_Methods_Info {
 //in first occurrence		
 		System.out.println(string.indexOf('i'));	//(the character will be converted to unicode: parameter-> (int ch))returns the index of given character where it occurred first in a string if presents, else returns -1.
 		 
-		System.out.println(string.indexOf('L',0));		//returns the index of given character here we can given the start index i.e. from which index it should be start checking.
+		System.out.println(string.indexOf('L',1));		//returns the index of given character here we can given the start index i.e. from which index it should be start checking.
 		
 		System.out.println(string.indexOf("21",8 ));	//returns the index of given string's first character here we can given the start index i.e. from which index it should be start checking.
 		
@@ -43,6 +43,9 @@ public class String_Methods_Info {
 //		for(String i:array)
 //		System.out.print(i+" ");
 		
+		String str="12C";
+		int i=Integer.parseInt(str);
+		System.out.println(i);
 	}
 
 }

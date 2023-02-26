@@ -36,7 +36,11 @@ public class Srm implements Anna_University, Aicte {
 		obj.get_grades();
 		obj.leave_announce();
 		System.out.println(Aicte.fees);
-
 	}
 
+	@Override
+	public void display() {
+		// TODO Auto-generated method stub
+		System.out.println("Display method.");
+	}
 }

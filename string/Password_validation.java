@@ -20,6 +20,7 @@ public class Password_validation {
 	
 	public void toValidate_Password()
 	{
+		System.out.println();
 		System.out.println("Enter password:");
 		String pwd=sc.nextLine();
 		System.out.println(pwd);
@@ -41,19 +42,39 @@ public class Password_validation {
 		  }
 		  else
 		  {
-			  System.out.println("Password must have 8 letters.");
-			  break;
+			  System.out.println("\nPassword must have minimum 8 letters.");
+			  toValidate_Password();
 		  }
 		  
 		}
 		
-	if(flag1==true && flag2==true && flag3==true && flag4==true)
-		System.out.println("Password is valid.");
-	else
-		System.out.println("Password is not valid.");
-		
-		
+	if(flag1==false)
+		{
+			System.out.println("\nPassword must have atleast one capital letter.");
+			toValidate_Password();
+		}
+	else if(flag2==false)
+	{
+		System.out.println("\nPassword must have atleast one lowercase letter.");
+		toValidate_Password();
 	}
+	else if(flag3==false)
+	{
+		System.out.println("\nPassword must have atleast one number.");
+		toValidate_Password();
+	}
+	else if(flag4==false)
+	{
+		System.out.println("\nPassword must have atleast one special character.");
+		toValidate_Password();
+	}
+	else if(flag1==true && flag2==true && flag3==true && flag4==true)
+	{
+		System.out.println("\nPassword is valid.");
+		//System.exit(0);	
+	}
+	
+}
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

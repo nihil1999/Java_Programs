@@ -68,12 +68,13 @@ public class CountOf_DuplicateElements_inArray {
 			int count=0;
 			int check=0;
 			
-			while(tocount<fullcount)		//to check the repeated elements if the repeated number enters again then it needs to be skipped so i used variable check to identify.
+			while(tocount<index)		//to check the repeated elements if the repeated number enters again then it needs to be skipped so i used variable check to identify.
 			{
 				if(i!=0 && arr1[i]==arr2[tocount])	//i!=0 -> becauz arr2 contains 0 at starting.
-				check=1;	
+					check=1;	
 				tocount++;
 			}
+			
 			for(int j=i+1;j<arr1.length;j++)
 			{	
 				if(check==1)

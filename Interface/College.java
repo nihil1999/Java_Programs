@@ -30,6 +30,7 @@ public class College extends Anna_University {
 		obj.get_grades();
 		obj.leave_announce();
 		System.out.println(Aicte.fees);
+		Aicte.display();
 
 	}
 

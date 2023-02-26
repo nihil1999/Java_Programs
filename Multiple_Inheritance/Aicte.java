@@ -8,9 +8,7 @@ public interface Aicte {
 		System.out.println("This is an AICTE approved college: default method");
 	}
 
-	// public void leave_announce();
 	public void get_grades();
-	// public void get_certificate_verified();
 
 	public void get_certificate_verified();
 

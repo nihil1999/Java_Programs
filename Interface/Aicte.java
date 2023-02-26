@@ -1,5 +1,6 @@
 package Interface;
 
+
 public interface Aicte {
 
 	int fees = 50000;
@@ -10,11 +11,15 @@ public interface Aicte {
 
 	// public void leave_announce();
 	public void get_grades();
-	// public void get_certificate_verified();
 
 	public void get_certificate_verified();
 
 	public void leave_announce();
+	
+	static void display()
+	{
+		System.out.println("static method.");
+	}
 
 }
  

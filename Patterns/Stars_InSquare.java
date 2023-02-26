@@ -58,7 +58,23 @@ public class Stars_InSquare {
 			System.out.println();
 		}
 		
+		System.out.println("\n");
+		for(int row=1;row<=rowLength;row++)			// x in stars
+		{
+			for(int col=1;col<=colLength;col++)
+			{
+				if(col==row)
+					System.out.print("*");
+				else if(col==colLength-row+1 )
+					System.out.print("*");
+				else
+					System.out.print(" ");
+				
+			}
+			System.out.println();
+		
 		}
+	}
 	
 	
 

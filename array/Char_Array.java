@@ -17,7 +17,7 @@ public class Char_Array {
 	 */
 	
 	Scanner sc=new Scanner(System.in);
-	int arr[];
+	 int arr[];
 	char arr1[];
 	char arr2[];
 	
