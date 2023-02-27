@@ -3,6 +3,7 @@
  */
 package string;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -91,6 +92,8 @@ public class Info {
 		String str5="payilagam";
 		System.out.println(str5.indexOf("a",0 ));
 		int no=5;	
+		
+		String stri=new String();
 	}
 
 	public String toString()
