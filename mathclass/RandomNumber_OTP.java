@@ -41,11 +41,10 @@ public class RandomNumber_OTP {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		RandomNumber_OTP obj=new RandomNumber_OTP();
-		
-		for(int i=1;i<=10;i++) {
-			
-			obj.toGet_RandomNumber();
-		}
+//		for(int i=1;i<=10;i++) {
+//			
+//			obj.toGet_RandomNumber();
+//		}
 	}
 
 }

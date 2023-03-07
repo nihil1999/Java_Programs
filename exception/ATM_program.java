@@ -15,7 +15,7 @@ public class ATM_program {
 	/**
 	 * @param args
 	 */
-	Scanner sc=new Scanner(System.in);
+	Scanner sc;
 	
 	public static int bal=150000;
 	
@@ -27,6 +27,8 @@ public class ATM_program {
 	
 	public void to_verify_pin()
 	{
+		System.out.println(withdraw);
+		sc=new Scanner(System.in);
 		System.out.println("\nWelcome to the ATM\n");
 		int pin=0;
 		int pin_range=4;
@@ -54,12 +56,14 @@ public class ATM_program {
 		{
 			e=new InputMismatchException(Error_msg_forATM.err1_input_mismatch);
 			System.out.println("\n"+e.getMessage());
+			//to_verify_pin();
 		} 
 		
 		catch (ATM_PinException e) 
 		{
 			// TODO Auto-generated catch block
 			System.out.println("\n"+e.getMessage());
+			//to_verify_pin();
 		}
 		
 		catch (Exception e) 
@@ -68,18 +72,17 @@ public class ATM_program {
 			System.out.println("\n"+e.getMessage());
 		}
 		
-		finally {
-			sc.close();
-		}
-		
+		toRepeat();
 	}
 	
 	public void toWithdrawal() {
 		// TODO Auto-generated method stub
+		sc=new Scanner(System.in);
 		try 
 		{
 			System.out.println("\nEnter the amount to be withdraw:");
 			int amt=sc.nextInt();
+			System.out.println(withdraw);
 			
 			
 			if(amt>bal)
@@ -100,7 +103,8 @@ public class ATM_program {
 			}
 			else if(withdraw+amt>min_transaction_limitPerDay)
 			{
-				throw new AmountException(Error_msg_forATM.err8_amt_exceeds_PerDayTransLimit); //if amount exceeds per day transaction limit.
+				
+				throw new AmountException(Error_msg_forATM.to_setWithdrwa(withdraw)); //if amount exceeds per day transaction limit.
 			}
 			else {
 					withdraw+=amt;
@@ -137,7 +141,7 @@ public class ATM_program {
 
 	public void toRepeat() {
 		// TODO Auto-generated method stub
-		
+		sc=new Scanner(System.in);
 		System.out.println("\nDo you want to process again \n"+"\n1 - Withdrawal \n"+"\n2 - Cancel\n");
 		try {
 			
@@ -150,6 +154,7 @@ public class ATM_program {
 					break;
 				case 2:
 					System.out.println("\nThank you, come again.");
+					System.exit(0);
 					break;
 				default:
 					throw new ChoiceException(Error_msg_forATM.err6_choiceInvalid);
@@ -163,6 +168,11 @@ public class ATM_program {
 		catch (ChoiceException e) {
 			// TODO Auto-generated catch block
 			System.out.println("\n"+e.getMessage());
+			toRepeat();
+		}
+		
+		finally {
+			sc.close();
 		}
 	}
 

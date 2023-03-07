@@ -21,9 +21,7 @@ public class Program_Exception extends Info {
 	{
 		Scanner sc=new Scanner(System.in);
 		System.out.println("\nEnter 2 numbers: ");
-		
-		Program_Exception obj=new Program_Exception();
-		
+
 		int a=0,b=0,c=0;
 		int arr[]=new int[10];
 		String str="hai";
@@ -137,6 +135,7 @@ public class Program_Exception extends Info {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		Program_Exception obj=new Program_Exception();
 		toGetInput();
 	}
 
