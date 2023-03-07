@@ -19,7 +19,8 @@ public class SumOfNumbers_usingScanner_InArray {
 			System.out.print(arr[i] + " ");
 			sum+=arr[i];
 		}
-		System.out.println("\nSum of n numbers: " + sum);	
+		System.out.println("\nSum of n numbers: " + sum);
+		sc.close();
 	}
 
 	public static void main(String[] args) {
@@ -30,6 +31,7 @@ public class SumOfNumbers_usingScanner_InArray {
 		
 		int[] arr=new int[s.nextInt()];
 		obj.sumOfNumbers(arr);
+		s.close();
 	}
 
 }

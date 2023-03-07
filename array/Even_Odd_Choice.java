@@ -79,6 +79,7 @@ public class Even_Odd_Choice {
 		default:
 				System.out.println("Enter valid choice");
 		}
+		s.close();
 	}
 
 	public static void main(String[] args) {

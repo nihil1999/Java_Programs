@@ -57,12 +57,7 @@ public class EvenOdd_InArrays {
 		System.out.println(arr);
 		obj.print_even(arr);
 		obj.print_odd(arr);
-		
-
-		
-		
-		
-		
+		sc.close();		
 	}
 
 }

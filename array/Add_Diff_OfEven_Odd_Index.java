@@ -47,6 +47,7 @@ public class Add_Diff_OfEven_Odd_Index {
 	int diff;
 	diff=sum-sum1;
 	System.out.println("\nDifference of sum of numbers in even and odd index is: " + diff);
+	sc.close();
 }
 
 //for displaying the array

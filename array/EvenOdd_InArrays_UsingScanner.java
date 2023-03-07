@@ -4,18 +4,19 @@ import java.util.Scanner;
 
 public class EvenOdd_InArrays_UsingScanner {
 
+	Scanner sc;
+	
 //for printing even numbers
 	public void even() {
 		
 		System.out.println("Even number");
-		Scanner sc = new Scanner(System.in);
+		sc = new Scanner(System.in);
 		System.out.println("Enter the range: ");
 		int limit = sc.nextInt();
 		System.out.println("Enter the starting number: ");
 		int start = sc.nextInt();
 		System.out.println("Enter the ending number: ");
 		int end = sc.nextInt();
-		 sc.close();
 
 		int arr[] = new int[limit];
 
@@ -42,13 +43,13 @@ public class EvenOdd_InArrays_UsingScanner {
 //for printing odd numbers
 	public void odd() {
 		System.out.println("\nOdd number");
-		Scanner s = new Scanner(System.in);
+		sc = new Scanner(System.in);
 		System.out.println("Enter the range: ");
-		int limit = s.nextInt();
+		int limit = sc.nextInt();
 		System.out.println("Enter the starting number: ");
-		int start = s.nextInt();
+		int start = sc.nextInt();
 		System.out.println("Enter the ending number: ");
-		int end = s.nextInt();
+		int end = sc.nextInt();
 	//	s.close();
 
 		int arr[] = new int[limit];
@@ -78,5 +79,6 @@ public class EvenOdd_InArrays_UsingScanner {
 
 		obj.even();
 		obj.odd();
+		obj.sc.close();
 	}
 }

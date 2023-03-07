@@ -4,9 +4,11 @@ import java.util.Scanner;
 //for checking that the given number is in the array.
 public class Check_Number_In_Array {
 	
+	Scanner sc;
+	
 	public void to_Assign_Number_inArray()
 	{
-		Scanner sc=new Scanner(System.in);
+		sc=new Scanner(System.in);
 		System.out.println("Enter the range: ");
 		int limit=sc.nextInt();
 		int arr[]=new int[limit];
@@ -33,7 +35,7 @@ public class Check_Number_In_Array {
 	{
 		int flag=0;
 		System.out.println("\nGive number to check");
-		Scanner sc=new Scanner(System.in);
+		sc=new Scanner(System.in);
 		int number=sc.nextInt();
 		
 		for(int i=0;i<arr.length;i++)
@@ -52,6 +54,7 @@ public class Check_Number_In_Array {
 		// TODO Auto-generated method stub
 		Check_Number_In_Array obj=new Check_Number_In_Array();
 		obj.to_Assign_Number_inArray();
+		obj.sc.close();
 	}
 
 }

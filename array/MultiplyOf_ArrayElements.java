@@ -22,7 +22,7 @@ public class MultiplyOf_ArrayElements {
 			mul*=arr[i];
 		}
 		System.out.println("\nMultiply of array elements: " + mul);
-		
+		sc.close();
 	}
 
 	public static void main(String[] args) {

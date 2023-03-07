@@ -24,6 +24,7 @@ public class Square_Array {
 		}
 		
 		display(a,b);
+		sc.close();
 	}
 
 	public void display(int[] a, int[] b) {

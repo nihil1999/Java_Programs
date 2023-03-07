@@ -16,7 +16,6 @@ public class Info {
 		// TODO Auto-generated method stub
 		StringBuffer str=new StringBuffer();
 		
-		
 	}
 
 }

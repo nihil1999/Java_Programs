@@ -23,6 +23,7 @@ public class ReverseNumber_InArrays {
 		{
 			System.out.print(arr[i] + " ");
 		}
+		s.close();
 	}
 
 	public static void main(String[] args) {
@@ -32,6 +33,7 @@ public class ReverseNumber_InArrays {
 		System.out.println("Enter the limit: ");
 		int arr[]=new int[sc.nextInt()];
 		obj.reverse(arr);
+		sc.close();
 	}
 
 }

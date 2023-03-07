@@ -20,6 +20,7 @@ public class Check_Array_Subset {
 			System.out.println("Enter the " + i + " index number for 2nd array: ");
 			arr2[i] = scan.nextInt();
 		}
+		scan.close();
 	}
 
 	public void display_arrays(int[] a, int[] b) {
@@ -39,10 +40,38 @@ public class Check_Array_Subset {
 //to check if the array is a subset of another array.
 	public void check_array_subset(int[] arr1, int arr2[]) {
 		int flag = 0;
-		for (int i = 0; i < arr2.length; i++) {
-			for (int j = 0; j < arr1.length; j++) {
-				if (arr2[i] == arr1[j])
-					flag++;
+		boolean check;
+		
+		if(arr2.length<arr1.length) 
+		{
+			for (int i = 0; i < arr2.length; i++) {
+				check=false;
+				for (int j = 0; j < arr1.length; j++) {
+					if (arr2[i] == arr1[j])
+						{
+							flag++;
+							check=true;
+							break;
+						}
+				}
+				if(check==false)
+					break;
+			}
+		}
+		else
+		{
+			for (int i = 0; i < arr1.length; i++) {
+				check=false;
+				for (int j = 0; j < arr2.length; j++) {
+					if (arr1[i] == arr2[j])
+						{
+							flag++;
+							check=true;
+							break;
+						}
+				}
+				if(check==false)
+					break;
 			}
 		}
 		
@@ -75,6 +104,7 @@ public class Check_Array_Subset {
 		obj.assign_array(arr1, arr2);
 		obj.display_arrays(arr1, arr2);
 		obj.check_array_subset(arr1, arr2);
+		sc.close();
 	}
 
 }

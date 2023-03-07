@@ -7,7 +7,7 @@ public class Add_Diff_Even_Odd_Numbers {
 
 	public void add_even_odd_Numbers_inIndex()
 	{
-		Scanner sc=new Scanner(System.in);
+	    Scanner sc=new Scanner(System.in);
 		System.out.println("Enter the range for even numbers");
 		int arr[]=new int[sc.nextInt()];
 		
@@ -48,6 +48,7 @@ public class Add_Diff_Even_Odd_Numbers {
 	int diff;
 	diff=sum-sum1;
 	System.out.println("\nDifference of sum of numbers in even and odd index is: " + diff);
+	sc.close();
 }
 
 //for displaying the array
