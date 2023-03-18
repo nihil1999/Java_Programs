@@ -27,7 +27,7 @@ public class ATM_program {
 	
 	public void to_verify_pin()
 	{
-		System.out.println(withdraw);
+		//System.out.println(withdraw);
 		sc=new Scanner(System.in);
 		System.out.println("\nWelcome to the ATM\n");
 		int pin=0;
@@ -56,7 +56,7 @@ public class ATM_program {
 		{
 			e=new InputMismatchException(Error_msg_forATM.err1_input_mismatch);
 			System.out.println("\n"+e.getMessage());
-			//to_verify_pin();
+			to_verify_pin();
 		} 
 		
 		catch (ATM_PinException e) 
@@ -72,7 +72,7 @@ public class ATM_program {
 			System.out.println("\n"+e.getMessage());
 		}
 		
-		toRepeat();
+		//toRepeat();
 	}
 	
 	public void toWithdrawal() {

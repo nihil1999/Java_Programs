@@ -70,10 +70,7 @@ public class Program_Exception extends Info {
 				e=new IllegalArgumentException("Value must be positive.");
 				System.out.println(e.getMessage());
 				//toGetInput();
-			}
-			
-			
-//			
+			}			
 		}
 		
 		catch(InputMismatchException e)
@@ -135,7 +132,7 @@ public class Program_Exception extends Info {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Program_Exception obj=new Program_Exception();
+		//Program_Exception obj=new Program_Exception();
 		toGetInput();
 	}
 
