@@ -6,14 +6,14 @@ package collections;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.ListIterator;
-import java.util.Set;
+import java.util.TreeSet;
 
 /**
  * @author logan
  * @param 
  *
  */
-public class Info<E> extends ArrayList<E>{
+public class Info{
 
 	/**
 	 * @param args
@@ -51,31 +51,39 @@ public class Info<E> extends ArrayList<E>{
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Info obj=new Info();
-		obj.add("logan");
-		System.out.println(obj);
 		toCheck();
 		
 		String str="abc";
 		String str1="cde";
 		System.out.println(str.compareTo(str1));
 		ArrayList al2=new ArrayList();
-		Set s=new HashSet();
-		al2.add(1);
-		al2.add(2);
-		al2.add(1);
-		al2.add(3);
+		HashSet s=new HashSet();
+		ArrayList al=new ArrayList();
+		HashSet s1=new HashSet();
+		al.add("logan");
+		al.add("apple");
+		al.add("mango");
+		al.add("ball");
+		al.add("wolverine");
+		al.add("jack");
+		al.add("mani");
+		al.add("logan");
+		for(int i=10;i>=1;i--)
+			al2.add(1);
 		s.addAll(al2);
 		System.out.println(al2);
+		//for(int i=1;i<=100;i++)
 		System.out.println(s);
-		
-		
+		s1.addAll(al);
+		System.out.println(al);
+		//for(int i=1;i<=100;i++)
+		System.out.println(s1);
+		TreeSet ts=new TreeSet(s1);
+		System.out.println(ts);
+		System.out.println(ts.ceiling("ball"));
+		//System.out.println(ts.ceil);
 	}
 
-//	@Override
-//	public String toString() {
-//		return "empty";
-//	}
 	
 
 }

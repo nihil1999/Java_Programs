@@ -94,7 +94,9 @@ public class Info {
 		System.out.println(str5.indexOf("a",0 ));
 		int no=5;	
 		
-		String stri=new String();
+		String stri=new String("hai");
+		String stri1="hai";
+		System.out.println(stri.equals(stri1));
 	}
 
 	public String toString()
